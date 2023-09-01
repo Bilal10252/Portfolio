@@ -25,9 +25,7 @@ window.addEventListener("scroll", liveScrolling);
         let sectionTop = section.offsetTop -100;
         let sectionHeight = section.offsetHeight;
 
-        console.log("ScrollY: "+ scrollY);
-        console.log("sectionTop: "+ sectionTop);
-        console.log("sectionHeight: "+ sectionHeight);
+        
 
         if(scrollY >= sectionTop && scrollY <= (sectionTop+sectionHeight)){
             current = section.getAttribute("id");

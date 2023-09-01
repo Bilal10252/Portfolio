@@ -101,6 +101,10 @@ section{
    font-weight: 700;
 }
 
+.home-content{
+    flex: 1;
+}
+
 .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
 }
@@ -119,7 +123,9 @@ section{
 /* Animation on the image moving up and down */
 .home-img img{
     /* animation: floatImage 4s ease-in-out infinite; */
-    width: 100%;
+    width: 90%;
+    border-radius: 7px;
+
 }
 
 @keyframes floatImage{
@@ -192,8 +198,9 @@ section{
 }
 
 .about-img img{
-    width: 30vw;
-    height: 70vh;
+    width: 25vw;
+    border-radius: 7px;
+
 }
 
 .heading{
@@ -338,7 +345,7 @@ text-align: left;
 
 /* Contact Form */
 
-.contact h2{
+/* .contact h2{
     margin-bottom: 3rem;
 }
 
@@ -375,7 +382,7 @@ text-align: left;
 
 .contact form textarea{
    resize: none;
-}
+} */
 
 .footer{
     display: flex;
@@ -413,6 +420,20 @@ color: var(--second-bg-color);
     html{
         font-size: 55%;
     }
+
+    .home-img img{
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .about-img img {
+        width: 35vw;
+        height: 62vh;
+        border-radius: 7px;
+        
+    }
+
+
     
 }
 
@@ -433,6 +454,18 @@ color: var(--second-bg-color);
     }
     .footer{
         padding: 2rem 3%;
+    }
+
+    .home-img img{
+        width: 35vw;
+        border-radius: 7px;
+      }
+
+      .about-img img{
+        height: auto;
+        width: 35vw;
+        border-radius: 7px;
+
     }
 }
 
@@ -520,6 +553,18 @@ color: var(--second-bg-color);
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    .home-img img{
+        width: 55vw;
+        border-radius: 7px;
+      }
+
+      .home{
+        gap: 6rem;
+    }
+
+
 }
 
 @media screen and (max-width:617px) {
@@ -530,6 +575,20 @@ color: var(--second-bg-color);
     .portfolio-box img{
         height: 300px;
     }
+
+     
+
+    .home-img img{
+        width: 70vw;
+        border-radius: 7px;
+      }
+
+      .about-img img{
+        width: 70vw;  
+        border-radius: 7px;
+
+    }
+    
     
 }
 
@@ -552,21 +611,41 @@ color: var(--second-bg-color);
 
     }
     .about-img img{
-        width: 60vw;        
+        width: 90vw;  
+        border-radius: 7px;
+
     }
+
+    .home-img img{
+        width: 90vw;
+        border-radius: 7px;
+      }
 
     .portfolio-box img{
         height: 220px;
+    }
+
+    .home{
+        gap: 3rem;
     }
 }
 
 @media screen and (max-width: 365px){
       .home-img img{
         width: 90vw;
+        border-radius: 7px;
+
       }
 
       .about-img img{
-        width: 90vw;        
+        width: 90vw;
+        border-radius: 7px;
+
+    }
+
+
+    .home{
+        gap: 3rem;
     }
 
     .footer{
